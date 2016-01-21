@@ -42,8 +42,8 @@ module.exports.lapd = function(esClient, state, driver_data, operation_parameter
     days = parse_days(operation_parameters.days);
   }
 
-  var end_ts = _.random(state.days.start, state.days.end);
-  var start_ts = end_ts - (state.period * 24 * 3600 * 1000);
+  var end_ts = _.random(days.start, days.end);
+  var start_ts = end_ts - (period * 24 * 3600 * 1000);
 
   var bulk_body = [
     {"index":index,"search_type":"count","ignore_unavailable":true},
@@ -93,8 +93,8 @@ module.exports.elk = function(esClient, state, driver_data, operation_parameters
     days = parse_days(operation_parameters.days);
   }
 
-  var end_ts = _.random(state.days.start, state.days.end);
-  var start_ts = end_ts - (state.period * 24 * 3600 * 1000);
+  var end_ts = _.random(days.start, days.end);
+  var start_ts = end_ts - (period * 24 * 3600 * 1000);
 
   var bulk_body = [
     {"index":index,"search_type":"count","ignore_unavailable":true},
@@ -150,8 +150,8 @@ module.exports.accidentology = function(esClient, state, driver_data, operation_
     days = parse_days(operation_parameters.days);
   }
 
-  var end_ts = _.random(state.days.start, state.days.end);
-  var start_ts = end_ts - (state.period * 24 * 3600 * 1000);
+  var end_ts = _.random(days.start, days.end);
+  var start_ts = end_ts - (period * 24 * 3600 * 1000);
 
   var bulk_body = [
     {"index":index,"search_type":"count","ignore_unavailable":true},
@@ -201,8 +201,8 @@ module.exports.singapore_lta_advisories = function(esClient, state, driver_data,
     days = parse_days(operation_parameters.days);
   }
 
-  var end_ts = _.random(state.days.start, state.days.end);
-  var start_ts = end_ts - (state.period * 24 * 3600 * 1000);
+  var end_ts = _.random(days.start, days.end);
+  var start_ts = end_ts - (period * 24 * 3600 * 1000);
 
   var bulk_body = [
     {"index":index,"search_type":"count","ignore_unavailable":true},
@@ -254,8 +254,8 @@ module.exports.singapore_lta_carparks = function(esClient, state, driver_data, o
     days = parse_days(operation_parameters.days);
   }
 
-  var end_ts = _.random(state.days.start, state.days.end);
-  var start_ts = end_ts - (state.period * 24 * 3600 * 1000);
+  var end_ts = _.random(days.start, days.end);
+  var start_ts = end_ts - (period * 24 * 3600 * 1000);
 
   var bulk_body = [
     {"index":index,"search_type":"count","ignore_unavailable":true},
@@ -305,8 +305,8 @@ module.exports.singapore_lta_incidents = function(esClient, state, driver_data, 
     days = parse_days(operation_parameters.days);
   }
 
-  var end_ts = _.random(state.days.start, state.days.end);
-  var start_ts = end_ts - (state.period * 24 * 3600 * 1000);
+  var end_ts = _.random(days.start, days.end);
+  var start_ts = end_ts - (period * 24 * 3600 * 1000);
 
   var bulk_body = [
     {"index":index,"search_type":"count","ignore_unavailable":true},
