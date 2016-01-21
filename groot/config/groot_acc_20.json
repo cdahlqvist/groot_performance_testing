@@ -1,0 +1,26 @@
+{
+  "run": {
+    "cluster":"Found_16GB_3AZ",
+    "concurrency": 20
+  },
+  "jobs" : [
+    {
+      "job_id": "groot_acc_20",
+      "concurrency": 20,
+      "driver": "groot",
+      "rate_limit": 2,
+      "operations": [
+        {
+          "name": "accidentology",
+          "weight": 1,
+          "sla": 2000,
+          "parameters": {
+            "index": ["accidents-2012","accidents-2013"],
+            "days": "2013-08-13,2013-08-13",
+            "period": 607
+          }
+        }
+      ]
+    }
+  ]
+}

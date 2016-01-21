@@ -1,0 +1,26 @@
+{
+  "run": {
+    "cluster":"Found_16GB_3AZ",
+    "concurrency": 20
+  },
+  "jobs" : [
+    {
+      "job_id": "groot_singinc_20",
+      "concurrency": 20,
+      "driver": "groot",
+      "rate_limit": 2,
+      "operations": [
+        {
+          "name": "singapore_lta_incidents",
+          "weight": 1,
+          "sla": 2000,
+          "parameters": {
+            "index": ["singapore-lta-incident-2015.39","singapore-lta-incident-2015.35","singapore-lta-incident-2015.36","singapore-lta-incident-2015.37","singapore-lta-incident-2015.38","singapore-lta-incident-2015.40"],
+            "days": "2015-09-30,2015-10-01",
+            "period": 40
+          }
+        }
+      ]
+    }
+  ]
+}

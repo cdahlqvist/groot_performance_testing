@@ -1,0 +1,26 @@
+{
+  "run": {
+    "cluster":"Found_16GB_3AZ",
+    "concurrency": 20
+  },
+  "jobs" : [
+    {
+      "job_id": "groot_lapd_20",
+      "concurrency": 20,
+      "driver": "groot",
+      "rate_limit": 2,
+      "operations": [
+        {
+          "name": "lapd",
+          "weight": 1,
+          "sla": 2000,
+          "parameters": {
+            "index": ["lapd"],
+            "days": "2013-08-13,2013-08-13",
+            "period": 607
+          }
+        }
+      ]
+    }
+  ]
+}
