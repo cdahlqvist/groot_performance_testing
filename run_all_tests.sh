@@ -1,4 +1,4 @@
-./bin/rankin -h $GROOT_HOST -p https -c $GROOT_USER:$GROOT_PWD -f./drivers/groot/config/groot_elk_20.json -r elk2_20 -D ./groot_data -i 0 -d 5
+./bin/rankin -h $GROOT_HOST -p https -c $GROOT_USER:$GROOT_PWD -f./drivers/groot/config/groot_elk_20.json -r elk_20 -D ./groot_data -i 0 -d 5
 ./bin/rankin -h $GROOT_HOST -p https -c $GROOT_USER:$GROOT_PWD -f./drivers/groot/config/groot_elk2_20.json -r elk2_20 -D ./groot_data -i 0 -d 5
 ./bin/rankin -h $GROOT_HOST -p https -c $GROOT_USER:$GROOT_PWD -f./drivers/groot/config/groot_lapd_20.json -r lapd_20 -D ./groot_data -i 0 -d 5
 ./bin/rankin -h $GROOT_HOST -p https -c $GROOT_USER:$GROOT_PWD -f./drivers/groot/config/groot_acc_20.json -r acc_20 -D ./groot_data -i 0 -d 5
