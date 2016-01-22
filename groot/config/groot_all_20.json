@@ -31,6 +31,16 @@
           }
         },
         {
+          "name": "elk",
+          "weight": 1,
+          "sla": 2000,
+          "parameters": {
+            "index": ["basic-logstash-2015"],
+            "days": "2015-04-12,2015-04-13",
+            "period": 40
+          }
+        },
+        {
           "name": "accidentology",
           "weight": 1,
           "sla": 2000,

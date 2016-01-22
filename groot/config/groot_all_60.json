@@ -1,14 +1,14 @@
 {
   "run": {
     "cluster":"Found_16GB_3AZ",
-    "concurrency": 40
+    "concurrency": 60
   },
   "jobs" : [
     {
-      "job_id": "groot_all_40",
-      "concurrency": 40,
+      "job_id": "groot_all_60",
+      "concurrency": 60,
       "driver": "groot",
-      "rate_limit": 4,
+      "rate_limit": 6,
       "operations": [
         {
           "name": "lapd",
