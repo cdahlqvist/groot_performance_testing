@@ -5,13 +5,13 @@
   },
   "jobs" : [
     {
-      "job_id": "groot_elk_revised_20",
+      "job_id": "groot_elk_rev1_20",
       "concurrency": 20,
       "driver": "groot",
       "rate_limit": 2,
       "operations": [
         {
-          "name": "elk_revised",
+          "name": "elk_rev1",
           "weight": 1,
           "sla": 2000,
           "parameters": {
